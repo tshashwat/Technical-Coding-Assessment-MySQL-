@@ -1,0 +1,12 @@
+CREATE DATABASE Database_2;
+USE Database_2;
+
+CREATE TABLE countries (
+country_id varchar(2) NULL DEFAULT NULL,
+country_name varchar(40) NULL DEFAULT NULL,
+region_id decimal(10,0)
+);
+
+CREATE TABLE COUNTRY_NEW 
+SELECT COUNTRY_ID,COUNTRY_NAME,REGION_ID
+FROM countries;
