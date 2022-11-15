@@ -1,0 +1,9 @@
+CREATE DATABASE New_database;
+USE New_database;
+CREATE TABLE countries (
+country_id int,
+country_name varchar(255),
+region_id int, 
+CONSTRAINT country_name CHECK ("Italy" OR "India" OR "China")
+);
+
